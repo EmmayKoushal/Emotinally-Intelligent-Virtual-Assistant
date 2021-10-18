@@ -67,7 +67,7 @@ i = 0
 while (i < 5):
     isTrue, img = cap.read()
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-
+    i += 1
     predictions = DeepFace.analyze(img)
 cap.release()
 cv2.destroyAllWindows()
